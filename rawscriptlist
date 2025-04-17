@@ -1,5 +1,4 @@
-
-print([[
+game.Players.LocalPlayer:Kick([[
 
 Raw script list
 Note:  put the script in Script_Version to use.
@@ -7,13 +6,31 @@ You can also goto https://ryryy1.github.io/rawscriptlist
 for a better view of all the scripts, the link was copied to your clipboard.
 
 
-Arsenal
+Arsenal - arsenal script
 Chants - da hood script
 Headshot.cc - da hood script
 Autoproject - jailbreak script
-
+Bladeball - blade ball script
 
 
 ]])
+
+local games = {
+    [111958650] = "Arsenal",
+    [2788229376] = "Da hood",
+    [13772394625] = "Blade Ball",
+	[606849621] = "Jailbreak"
+}
+
+
+if games[game.PlaceId] then
+    warn("Game Support found")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Game support found", 
+    Text = "Support for your game was found. You are able to find a script for it in this list.",
+    Duration = 20
+})
+
+end
 
 setclipboard("https://ryryy1.github.io/rawscriptlist")
