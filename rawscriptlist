@@ -1,7 +1,19 @@
-print("SCRIPT LIST <>")
-print("
+
+print([[
+
+Raw script list
+Note:  put the script in Script_Version to use.
+You can also goto https://ryryy1.github.io/rawscriptlist 
+for a better view of all the scripts, the link was copied to your clipboard.
+
+
 Arsenal
 Chants - da hood script
 Headshot.cc - da hood script
 Autoproject - jailbreak script
-")
+
+
+
+]])
+
+setclipboard("https://ryryy1.github.io/rawscriptlist")
